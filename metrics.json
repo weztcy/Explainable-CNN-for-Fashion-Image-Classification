@@ -1,0 +1,315 @@
+{
+  "final_model": "regularized_cnn",
+  "device": "CPU",
+  "checkpoint_used": "outputs/models/best_cnn.pt",
+  "test_samples": 10000,
+  "overall_metrics": {
+    "test_accuracy": 0.9261,
+    "test_macro_precision": 0.9258210352084092,
+    "test_macro_recall": 0.9261000000000001,
+    "test_macro_f1": 0.925828880685773,
+    "test_weighted_precision": 0.9258210352084092,
+    "test_weighted_recall": 0.9261,
+    "test_weighted_f1": 0.9258288806857728
+  },
+  "per_class_report": {
+    "T-shirt/top": {
+      "precision": 0.8851626016260162,
+      "recall": 0.871,
+      "f1-score": 0.8780241935483871,
+      "support": 1000.0
+    },
+    "Trouser": {
+      "precision": 0.9969727547931383,
+      "recall": 0.988,
+      "f1-score": 0.9924660974384731,
+      "support": 1000.0
+    },
+    "Pullover": {
+      "precision": 0.8892185954500494,
+      "recall": 0.899,
+      "f1-score": 0.8940825459970164,
+      "support": 1000.0
+    },
+    "Dress": {
+      "precision": 0.9284294234592445,
+      "recall": 0.934,
+      "f1-score": 0.9312063808574277,
+      "support": 1000.0
+    },
+    "Coat": {
+      "precision": 0.8733075435203095,
+      "recall": 0.903,
+      "f1-score": 0.887905604719764,
+      "support": 1000.0
+    },
+    "Sandal": {
+      "precision": 0.9908998988877654,
+      "recall": 0.98,
+      "f1-score": 0.9854198089492208,
+      "support": 1000.0
+    },
+    "Shirt": {
+      "precision": 0.7883211678832117,
+      "recall": 0.756,
+      "f1-score": 0.7718223583460949,
+      "support": 1000.0
+    },
+    "Sneaker": {
+      "precision": 0.94716618635927,
+      "recall": 0.986,
+      "f1-score": 0.9661930426261637,
+      "support": 1000.0
+    },
+    "Bag": {
+      "precision": 0.9782393669634025,
+      "recall": 0.989,
+      "f1-score": 0.9835902536051716,
+      "support": 1000.0
+    },
+    "Ankle boot": {
+      "precision": 0.9804928131416838,
+      "recall": 0.955,
+      "f1-score": 0.9675785207700102,
+      "support": 1000.0
+    },
+    "accuracy": 0.9261,
+    "macro avg": {
+      "precision": 0.9258210352084092,
+      "recall": 0.9261000000000001,
+      "f1-score": 0.925828880685773,
+      "support": 10000.0
+    },
+    "weighted avg": {
+      "precision": 0.9258210352084092,
+      "recall": 0.9261,
+      "f1-score": 0.9258288806857728,
+      "support": 10000.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      871,
+      0,
+      17,
+      16,
+      2,
+      1,
+      86,
+      0,
+      7,
+      0
+    ],
+    [
+      0,
+      988,
+      0,
+      9,
+      0,
+      0,
+      1,
+      0,
+      2,
+      0
+    ],
+    [
+      14,
+      1,
+      899,
+      5,
+      32,
+      0,
+      48,
+      0,
+      1,
+      0
+    ],
+    [
+      5,
+      1,
+      12,
+      934,
+      24,
+      0,
+      22,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      35,
+      16,
+      903,
+      0,
+      45,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      980,
+      0,
+      14,
+      0,
+      6
+    ],
+    [
+      92,
+      1,
+      47,
+      24,
+      71,
+      0,
+      756,
+      0,
+      9,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      986,
+      0,
+      11
+    ],
+    [
+      2,
+      0,
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      989,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      40,
+      1,
+      955
+    ]
+  ],
+  "top_confusion_pairs": [
+    {
+      "true_class_idx": 6,
+      "true_class_name": "Shirt",
+      "pred_class_idx": 0,
+      "pred_class_name": "T-shirt/top",
+      "count": 92,
+      "percentage_of_true": 9.2
+    },
+    {
+      "true_class_idx": 0,
+      "true_class_name": "T-shirt/top",
+      "pred_class_idx": 6,
+      "pred_class_name": "Shirt",
+      "count": 86,
+      "percentage_of_true": 8.6
+    },
+    {
+      "true_class_idx": 6,
+      "true_class_name": "Shirt",
+      "pred_class_idx": 4,
+      "pred_class_name": "Coat",
+      "count": 71,
+      "percentage_of_true": 7.1
+    },
+    {
+      "true_class_idx": 2,
+      "true_class_name": "Pullover",
+      "pred_class_idx": 6,
+      "pred_class_name": "Shirt",
+      "count": 48,
+      "percentage_of_true": 4.8
+    },
+    {
+      "true_class_idx": 6,
+      "true_class_name": "Shirt",
+      "pred_class_idx": 2,
+      "pred_class_name": "Pullover",
+      "count": 47,
+      "percentage_of_true": 4.7
+    },
+    {
+      "true_class_idx": 4,
+      "true_class_name": "Coat",
+      "pred_class_idx": 6,
+      "pred_class_name": "Shirt",
+      "count": 45,
+      "percentage_of_true": 4.5
+    }
+  ],
+  "model_comparison": {
+    "MLP Baseline": {
+      "model_key": "mlp",
+      "val_loss": 0.2954920111894608,
+      "val_acc": 0.8955,
+      "test_acc": 0.8873,
+      "test_macro_precision": 0.8881283986349159,
+      "test_macro_recall": 0.8873000000000001,
+      "test_macro_f1": 0.8875036056647015,
+      "param_count": 235146,
+      "best_epoch": 9
+    },
+    "Standard CNN": {
+      "model_key": "standard_cnn",
+      "val_loss": 0.2117851465543111,
+      "val_acc": 0.9188333333333333,
+      "test_acc": 0.9168,
+      "test_macro_precision": 0.9170033978126536,
+      "test_macro_recall": 0.9168,
+      "test_macro_f1": 0.916777886518924,
+      "param_count": 421642,
+      "best_epoch": 6
+    },
+    "Regularized CNN": {
+      "model_key": "regularized_cnn",
+      "val_loss": 0.1842160623073578,
+      "val_acc": 0.9326666666666666,
+      "test_acc": 0.9261,
+      "test_macro_precision": 0.9258210352084092,
+      "test_macro_recall": 0.9261000000000001,
+      "test_macro_f1": 0.925828880685773,
+      "param_count": 871082,
+      "best_epoch": 11
+    }
+  },
+  "inference_latency": {
+    "single_item_batch_1": {
+      "batch_size": 1,
+      "num_runs": 100,
+      "mean_ms": 0.71420800028136,
+      "std_ms": 0.20219908833038908,
+      "p50_ms": 0.625400003627874,
+      "p95_ms": 1.0948649971396662
+    },
+    "batched_batch_64": {
+      "batch_size": 64,
+      "num_runs": 50,
+      "mean_ms": 10.673536001413595,
+      "std_ms": 1.7666182594684972,
+      "p50_ms": 10.641800006851554,
+      "p95_ms": 13.57943999901181
+    }
+  }
+}
